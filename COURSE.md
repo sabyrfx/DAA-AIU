@@ -28,6 +28,26 @@ A useful way to think about the course is:
 
 ---
 
+## Every week
+
+The course follows a consistent weekly learning cycle:
+
+### 1. Lecture
+New concepts, analysis techniques, and worked examples.
+
+### 2. Practice
+Guided problem solving, algorithm tracing, and implementation.
+
+### 3. Independent work
+Assignments, quizzes, projects, and selected coding tasks.
+
+### 4. Reflection
+Explain correctness, complexity, and trade-offs.
+
+**Lecture → Practice → Independent Work → Reflection**
+
+---
+
 ## Key concepts to become familiar with
 
 The course builds around concepts such as:
