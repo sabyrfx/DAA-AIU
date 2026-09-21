@@ -12,3 +12,7 @@
 ## Week 1 focus
 
 This week introduces the basic language and reasoning used throughout Design & Analysis of Algorithms. The goal is to understand what an algorithm is, how algorithms differ from programs, and how to begin measuring algorithm efficiency in terms of time and space.
+
+## Daily work
+
+- [2026-09-21 — Time & Space Complexity, Big O, Matrix Algorithms](./2026-09-21.md)
