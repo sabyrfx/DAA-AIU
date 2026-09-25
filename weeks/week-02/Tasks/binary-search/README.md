@@ -1,40 +1,39 @@
 # Binary Search
 
-## Task Description
-
 - **LeetCode:** https://leetcode.com/problems/binary-search/
-- **Difficulty:** Easy
-- **Problem:**  
-  Given a sorted array of integers and a target value, return the index of the target if it exists. Otherwise, return `-1`.
 
-## Goal
+## 1. Problem
 
-- Understand how binary search reduces the search space by half.
-- Practice working with `left`, `right`, and `mid` pointers.
-- Analyze time and space complexity.
+Given an array and a target number. Our goal is to find the target in the array and display its index; otherwise, return `-1`.
 
-## Approaches
+## 2. Approach
 
-### Approach 1 — Binary Search
+Create a `for` loop and define `i = 0`. Search while `i` is less than the array length, and increment `i` after every check using `i++`.
 
-**Idea:**  
-Repeatedly compare the target with the middle element and discard the half where the target cannot exist.
+If `nums[i]` is equal to our target number, return `i`. If the target is never found, return `-1`.
 
-**Steps:**
-1. Set `left = 0` and `right = nums.length - 1`.
-2. Calculate the middle index.
-3. If `nums[mid] == target`, return `mid`.
-4. If `nums[mid] < target`, search the right half.
-5. Otherwise, search the left half.
-6. If the search range becomes empty, return `-1`.
+## 3. Time Complexity
 
-**Time Complexity:** `O(log n)`  
-**Space Complexity:** `O(1)`
+- `i = 0` runs 1 time.
+- `i < nums.length` is checked `n + 1` times.
+- `i++` runs `n` times.
 
-## Final Solution
+So the loop work grows linearly with `n`.
 
-_To be added after solving the task._
+`T(n) = 2n + 2` for these loop-control operations, so:
 
-## What I Learned
+**Time Complexity: `O(n)`**
 
-_To be completed after solving the task._
+## 4. Space Complexity
+
+We use only one extra variable, `i`, and its size does not depend on the input size.
+
+**Space Complexity: `O(1)`**
+
+## 5. Reflection / Improvement
+
+No improvements were applied for this solution.
+
+For this assignment, the current solution is acceptable because the main goal is to understand and analyze my own solution.
+
+A more efficient approach exists because the input array is sorted. That can be explored later.
