@@ -1,46 +1,37 @@
 # First Bad Version
 
-## Task Description
-
 - **LeetCode:** https://leetcode.com/problems/first-bad-version/
-- **Difficulty:** Easy
-- **Problem:**  
-  You are given versions from `1` to `n`. Once a bad version appears, every version after it is also bad. Use the provided `isBadVersion(version)` API to find the first bad version.
 
-## Goal
+## 1. Problem
 
-Solve the problem with your own approach first, then understand and analyze it.
+We have versions from `1` to `n`. Some first version becomes bad, and every version after it is also bad. Our goal is to find and return the first bad version.
 
-For your solution:
+## 2. Approach
 
-1. Write your own solution.
-2. Explain how the algorithm works.
-3. Define the time complexity.
-4. Define the space complexity.
-5. Explain why those complexities apply.
-6. If you find a more efficient approach, explain what can be improved.
+Create a `for` loop starting from version `1` and check every version until `n`.
 
-> Better your own brute-force solution than a borrowed optimal solution. Analysis is key.
+For each version, call `isBadVersion(i)`. If it returns `true`, return `i` immediately because this is the first bad version we found.
 
-## My Solution
+If no bad version is found, return `-1`.
 
-_To be added after solving the task._
+## 3. Time Complexity
 
-## How It Works
+In the worst case, the first bad version can be the last version, so the loop may check all `n` versions.
 
-_Explain your algorithm step by step._
+Therefore:
 
-## Complexity Analysis
+**Time Complexity: `O(n)`**
 
-- **Time Complexity:** `O(...)`
-- **Why:** ...
-- **Space Complexity:** `O(...)`
-- **Why:** ...
+## 4. Space Complexity
 
-## Improvements
+We only use one extra variable, `i`, and its size does not depend on `n`.
 
-_If you find a more efficient solution later, explain what changed and why it is more efficient._
+Therefore:
 
-## What I Learned
+**Space Complexity: `O(1)`**
 
-_To be completed after analyzing the solution._
+## 5. Reflection / Improvement
+
+No improvement was applied to this solution.
+
+This solution is simple and easy to understand. A more efficient approach is possible because all versions after the first bad one are also bad, but for now the linear solution is enough for the assignment.
