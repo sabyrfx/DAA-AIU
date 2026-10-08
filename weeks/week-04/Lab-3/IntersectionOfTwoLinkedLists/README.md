@@ -28,14 +28,6 @@ Why:
 
 TODO
 
-## 4. Space Complexity
-
-**Space Complexity:** TODO
-
-Why:
-
-TODO
-
-## 5. Reflection / Improvement
+## 4. Reflection / Improvement
 
 TODO
