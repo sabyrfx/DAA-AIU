@@ -20,8 +20,7 @@ For each problem:
 2. Explain how your algorithm works.
 3. Define the time complexity.
 4. Explain why your solution has this complexity.
-5. State and explain the space complexity.
-6. If there is a more efficient approach, briefly explain what could be improved.
+5. If there is a more efficient approach, briefly explain what could be improved.
 
 > Better your own brute-force solution than a borrowed optimal solution. Analysis is key.
 
@@ -33,8 +32,7 @@ Each problem must have its own `README.md` containing:
 2. **Approach** — explain your algorithm and trace it with an example.
 3. **Challenges / Failed Approaches** — describe difficulties and approaches that did not work, and explain why.
 4. **Time Complexity** — state the complexity and explain why.
-5. **Space Complexity** — state the complexity and explain why.
-6. **Reflection / Improvement** — explain whether a better approach exists, what would need to change, and what complexity it could achieve.
+5. **Reflection / Improvement** — explain whether a better approach exists, what would need to change, and what complexity it could achieve.
 
 ## Repository placement note
 
@@ -48,6 +46,5 @@ The assignment text contains conflicting week references: its GitHub section say
 - [ ] Each problem contains its own README.md.
 - [ ] Code works.
 - [ ] Time complexity is stated and explained.
-- [ ] Space complexity is stated and explained.
 - [ ] Challenges / failed approaches are documented.
 - [ ] Work is your own and you understand the submitted solution.
