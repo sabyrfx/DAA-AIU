@@ -43,14 +43,8 @@ For an empty list, the loop does not run and `head` (which is `null`) is returne
 
 Each loop iteration performs constant-time comparisons and reference assignments. An iteration either removes one node from the chain or advances to the next node; therefore, there are at most `n - 1` iterations for a nonempty list. The work grows linearly with the number of input nodes.
 
-## 4. Space Complexity
+## 4. Reflection / Improvement
 
-**Auxiliary space complexity: O(1)**.
-
-The algorithm stores only the `current` node reference and changes existing `next` links. It does not create another list, array, or recursion stack. The original input nodes are not counted as extra space.
-
-## 5. Reflection / Improvement
-
-This solution runs in linear time and constant auxiliary space. It already uses a single traversal and relinks existing nodes in place. In the worst case, examining the list requires work proportional to the number of nodes, so no asymptotic time or auxiliary-space improvement is needed for this approach.
+This solution runs in linear time. It already uses a single traversal and relinks existing nodes in place. In the worst case, examining the list requires work proportional to the number of nodes, so no asymptotic time improvement is needed for this approach.
 
 **Status:** Implemented and reasoned through; no LeetCode acceptance or automated test run is claimed here.
