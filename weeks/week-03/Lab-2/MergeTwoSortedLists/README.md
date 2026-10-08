@@ -1,41 +1,29 @@
-# Merge Two Sorted Lists
+# Merge Two Sorted Lists (LeetCode #21)
 
-[LeetCode problem](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+[Problem](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [Java solution](./Solution.java)
 
-> Fill this report in after solving the problem yourself.
+> **Review pending:** This is a reference implementation added before the student has worked through this problem independently. Re-implement and explain it step by step later.
 
-## 1. Problem
+## Problem
 
-TODO — describe the problem in your own words.
+Given the heads of two sorted linked lists, merge them into one sorted linked list and return its first node.
 
-## 2. Approach
+## Approach
 
-TODO — explain how your solution works.
+Create a temporary `dummy` node and a `tail` pointer. Compare the first available values in both lists, connect the smaller node to `tail.next`, and advance that list's pointer. Move `tail` forward. Once one list ends, attach the remainder of the other list. Return `dummy.next` (the first real node). The algorithm reuses the existing nodes.
 
-### Trace / Example
+## Example
 
-TODO — show the important iterations or pointer changes step by step.
+`1 -> 2 -> 4` and `1 -> 3 -> 4`: select `1, 1, 2, 3, 4, 4` in order. Result: `1 -> 1 -> 2 -> 3 -> 4 -> 4`.
 
-## 3. Time Complexity
+## Time complexity
 
-**Time Complexity:** TODO
+**O(n + m)**, where `n` and `m` are the lengths of the input lists. Each node is attached at most once.
 
-Why:
+## Auxiliary space complexity
 
-TODO
+**O(1)**. The implementation allocates one dummy node and a fixed number of references; it relinks existing nodes.
 
-## 4. Space Complexity
+## Reflection / Review
 
-**Space Complexity:** TODO
-
-Why:
-
-TODO
-
-## 5. Reflection / Improvement
-
-- Is there a more efficient approach?
-- What would need to change?
-- What complexity could the improved solution achieve?
-
-TODO
+The linear-time, in-place iterative solution is already asymptotically efficient. During review, explain why `dummy.next` is returned, why `tail` moves, and what happens when one input is empty.
