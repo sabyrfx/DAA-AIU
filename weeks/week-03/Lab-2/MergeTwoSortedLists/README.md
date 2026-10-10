@@ -22,9 +22,6 @@ Output: 1 -> 1 -> 2 -> 3 -> 4 -> 4
 
 O(n + m), where n and m are the lengths of the two lists. Each node is handled once.
 
-## Space Complexity
-
-O(1) auxiliary space. We use a dummy node and a fixed number of references, not a separate list of copied nodes.
 
 ## Review
 
