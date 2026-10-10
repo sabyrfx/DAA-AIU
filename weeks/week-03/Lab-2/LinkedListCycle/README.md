@@ -20,9 +20,6 @@ We compare node references (slow == fast), not their values.
 
 O(n). The pointers either reach the end or meet after a linear number of steps.
 
-## Space Complexity
-
-O(1) auxiliary space. Only two extra node references are used.
 
 ## Review
 
