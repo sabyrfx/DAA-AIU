@@ -16,8 +16,7 @@ For each problem:
 1. Write a solution.
 2. Explain how it works.
 3. State and justify time complexity.
-4. State and justify space complexity.
-5. Explain possible improvements.
+4. Explain possible improvements.
 
 > Better your own brute-force solution than a borrowed optimal solution. Analysis is key.
 
