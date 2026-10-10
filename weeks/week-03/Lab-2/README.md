@@ -10,40 +10,29 @@
 
 ## Objective
 
-The goal is not only to solve the problems, but to understand and analyze your own solution.
+Solve the linked-list problems and explain the algorithm and its complexity.
 
 For each problem:
-
-1. Write your own solution.
-2. Explain how your algorithm works.
-3. Define the time complexity.
-4. Explain why your solution has this complexity.
-5. State and explain the space complexity.
-6. If there is a more efficient approach, briefly explain what could be improved.
+1. Write a solution.
+2. Explain how it works.
+3. State and justify time complexity.
+4. State and justify space complexity.
+5. Explain possible improvements.
 
 > Better your own brute-force solution than a borrowed optimal solution. Analysis is key.
 
 ## Language
 
-Any programming language may be used. This repository currently uses Java for DAA practice, so Java is the default unless you choose otherwise.
+Java
 
-## Required report for each task
+## Progress
 
-Each problem must have its own `README.md` containing:
+- [x] Both Java solution files added.
+- [x] Both task READMEs added with approach and complexity.
+- [x] Walked through both algorithms step by step and discussed their logic.
+- [ ] Reimplement both solutions independently.
+- [ ] Verify LeetCode acceptance.
 
-1. **Problem** — describe the problem in your own words.
-2. **Approach** — explain your algorithm and trace it with an example.
-3. **Time Complexity** — state the complexity and explain why.
-4. **Space Complexity** — state the complexity and explain why.
-5. **Reflection / Improvement** — explain whether a better approach exists, what would need to change, and what complexity it could achieve.
+## Note
 
-## Submission checklist
-
-- [ ] Repository is public.
-- [ ] Both problems are included.
-- [ ] Each problem contains source code.
-- [ ] Each problem contains its own README.md.
-- [ ] Code works.
-- [ ] Time complexity is stated and explained.
-- [ ] Space complexity is stated and explained.
-- [ ] Work is your own and you understand the submitted solution.
+The initial Java implementations were generated with AI assistance to meet the deadline. The logic of both was subsequently reviewed step by step. This repository does not claim independent authorship or verified LeetCode submissions.
