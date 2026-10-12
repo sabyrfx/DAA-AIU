@@ -34,6 +34,13 @@ Each problem must have its own `README.md` containing:
 4. **Time Complexity** — state the complexity and explain why.
 5. **Reflection / Improvement** — explain whether a better approach exists, what would need to change, and what complexity it could achieve.
 
+## Progress
+
+- [x] Remove Duplicates from Sorted List — solution written and analyzed.
+- [x] Remove Linked List Elements — solution written and analyzed; final LeetCode acceptance not yet verified.
+- [ ] Intersection of Two Linked Lists.
+- [ ] Palindrome Linked List.
+
 ## Repository placement note
 
 The assignment text contains conflicting week references: its GitHub section says `week3`, while the final checklist explicitly requires `week4`. This lab is stored under `week-04` to match the final checklist and its sequence after Lab 2.
