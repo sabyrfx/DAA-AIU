@@ -1,33 +1,35 @@
 # Remove Linked List Elements
 
-[LeetCode problem](https://leetcode.com/problems/remove-linked-list-elements/description/?envType=problem-list-v2&envId=recursion)
+[LeetCode #203](https://leetcode.com/problems/remove-linked-list-elements/) | [Solution.java](./Solution.java)
 
-> Fill this report in after solving the problem yourself.
+## Problem
 
-## 1. Problem
+Remove all nodes with the given value from a linked list.
 
-TODO — describe the problem in your own words.
+## Approach
 
-## 2. Approach
+First, I move `head` forward while the first node contains `val`. This also handles an empty list or a list where every node must be removed.
 
-TODO — explain how your solution works.
+Then I use `current` to check the following node. If `current.next.val == val`, I skip that node using `current.next = current.next.next`. Otherwise, I move `current` forward.
 
-### Trace / Example
+I only advance `current` when I don't remove a node, so consecutive matching nodes are not skipped.
 
-TODO — show the important iterations or pointer changes step by step.
+## Example
 
-### Challenges / Failed Approaches
+Input: `1 -> 6 -> 6 -> 3`, `val = 6`
 
-TODO — describe what was difficult, what you tried, and why any failed approach did not work.
+Result: `1 -> 3`
 
-## 3. Time Complexity
+## Challenges
 
-**Time Complexity:** TODO
+- At first, I only handled matching nodes at the beginning of the list.
+- I initially checked `current.val` instead of `current.next.val`.
+- I moved `current` after every iteration, which could miss consecutive matching nodes. I fixed that with an `else` branch.
 
-Why:
+## Time Complexity
 
-TODO
+**O(n)**. The first loop skips matching nodes at the beginning, and the second loop processes the remaining nodes. Each node is visited or skipped once.
 
-## 4. Reflection / Improvement
+## Status
 
-TODO
+Solution completed after guided practice. The earlier version passed LeetCode's three sample test cases; the final corrected version has not been confirmed as accepted on LeetCode yet.
